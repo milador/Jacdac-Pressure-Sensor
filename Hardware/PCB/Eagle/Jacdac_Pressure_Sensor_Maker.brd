@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -197,7 +197,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="no"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYWQxOTI2" projecturn="a.cGVyc29uYWw6dWUyYWQxOTI2IzIwMjEwOTEzNDQzNTc2ODA2" f3durn="urn:adsk.wipprod:dm.lineage:uby1OiGsR5OmPWsZuNtneA" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="283a7cd4-f722-41ec-b4ac-fc46e3f57e68" lastsyncedrevisionid="283a7cd4-f722-41ec-b4ac-fc46e3f57e68" lastboardhashguid="31115b6d-28e2-ceed-8d36-bb19ea31c90c" lastpushedtime="2021-09-17T05:01:27Z" linktopcb3d="true"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYWQxOTI2" projecturn="a.cGVyc29uYWw6dWUyYWQxOTI2IzIwMjEwOTEzNDQzNTc2ODA2" f3durn="urn:adsk.wipprod:dm.lineage:ZZn_3PWcQH-DKU2TB5t4ng" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="607ce2a3-7e67-4747-be68-5b0d3c9f99a6" lastsyncedrevisionid="607ce2a3-7e67-4747-be68-5b0d3c9f99a6" lastboardhashguid="a80af503-482b-dce6-7ec2-f92226c4b6ee" lastpushedtime="2021-09-18T05:12:32Z" linktopcb3d="true"/>
 <plain>
 <wire x1="2.54" y1="27.94" x2="25.4" y2="27.94" width="0.127" layer="20"/>
 <wire x1="25.4" y1="27.94" x2="27.94" y2="25.4" width="0.127" layer="20" curve="-90"/>
@@ -3193,11 +3193,9 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="13.67" y1="21.032" x2="13.67" y2="20.4676" width="0.254" layer="1"/>
 <wire x1="18.1356" y1="16.002" x2="19.304" y2="16.002" width="0.254" layer="1"/>
 <wire x1="13.67" y1="20.4676" x2="18.1356" y2="16.002" width="0.254" layer="1"/>
-<wire x1="19.304" y1="16.002" x2="19.428103125" y2="16.002" width="0.254" layer="1"/>
-<wire x1="19.9898" y1="15.562665625" x2="19.428103125" y2="16.002" width="0.254" layer="1"/>
-<wire x1="19.9898" y1="14.7184" x2="19.304" y2="14.0326" width="0.254" layer="1"/>
+<wire x1="19.304" y1="16.002" x2="19.53259375" y2="16.002" width="0.254" layer="1"/>
+<wire x1="19.304" y1="14.0326" x2="19.9898" y2="14.7184" width="0.254" layer="1"/>
 <wire x1="19.304" y1="13.462" x2="19.304" y2="14.0326" width="0.254" layer="1"/>
-<wire x1="19.9898" y1="15.562665625" x2="19.9898" y2="14.7184" width="0.254" layer="1"/>
 <wire x1="25.4" y1="6.35" x2="24.7142" y2="6.35" width="0.254" layer="1"/>
 <wire x1="24.7142" y1="6.35" x2="23.6982" y2="7.366" width="0.254" layer="1"/>
 <wire x1="23.6982" y1="9.2964" x2="23.6982" y2="7.366" width="0.254" layer="1"/>
@@ -3226,6 +3224,8 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="11.3126" y1="21.752" x2="12.65" y2="21.752" width="0.254" layer="1"/>
 <wire x1="10.6426" y1="21.082" x2="11.3126" y2="21.752" width="0.254" layer="1"/>
 <wire x1="20.701" y1="12.2936" x2="19.304" y2="12.2936" width="0.254" layer="1"/>
+<wire x1="19.9898" y1="14.7184" x2="19.9898" y2="15.54479375" width="0.254" layer="1"/>
+<wire x1="19.9898" y1="15.54479375" x2="19.53259375" y2="16.002" width="0.254" layer="1"/>
 </signal>
 <signal name="RESET">
 <contactref element="J2" pad="5"/>
