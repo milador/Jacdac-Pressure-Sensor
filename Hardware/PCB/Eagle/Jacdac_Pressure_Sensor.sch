@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.001" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -137,7 +137,12 @@
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="156" name="tPlastic" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="157" name="tMetal" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="160" name="O_Dim" color="7" fill="1" visible="no" active="yes"/>
+<layer number="161" name="Rect" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="162" name="Desc" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="163" name="Mech1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="166" name="AntennaArea" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="168" name="4mmHeightArea" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="yes" active="yes"/>
@@ -241,64 +246,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </library>
 <library name="milador" urn="urn:adsk.eagle:library:12595918">
 <packages>
-<package name="JACDAC-CONNECTOR" urn="urn:adsk.eagle:footprint:29236023/2" library_version="56">
-<pad name="P2" x="0" y="0.625" drill="0.71" diameter="1.1"/>
-<pad name="P1" x="-1.27" y="0.625" drill="0.71" diameter="1.1"/>
-<pad name="P3" x="1.27" y="0.625" drill="0.71" diameter="1.1"/>
-<pad name="P$1" x="0" y="2.032" drill="0.35" diameter="0.6096"/>
-<pad name="P$2" x="0.635" y="-0.635" drill="0.35" diameter="0.6096"/>
-<wire x1="-3.905" y1="0" x2="-3.27" y2="0.635" width="0.127" layer="20" curve="90"/>
-<wire x1="-3.27" y1="0.635" x2="-3.27" y2="5.15" width="0.127" layer="20"/>
-<wire x1="-3.27" y1="5.15" x2="-2.57" y2="5.85" width="0.127" layer="20" curve="-90"/>
-<wire x1="-2.57" y1="5.85" x2="2.57" y2="5.85" width="0.127" layer="20"/>
-<wire x1="2.57" y1="5.85" x2="3.27" y2="5.15" width="0.127" layer="20" curve="-90"/>
-<wire x1="3.27" y1="5.15" x2="3.27" y2="0.635" width="0.127" layer="20"/>
-<wire x1="3.27" y1="0.635" x2="3.905" y2="0" width="0.127" layer="20" curve="90"/>
-<wire x1="-5.27" y1="0" x2="-3.905" y2="0" width="0.127" layer="20"/>
-<wire x1="5.27" y1="0" x2="3.905" y2="0" width="0.127" layer="20"/>
-<wire x1="2.52" y1="3.675" x2="2.17" y2="3.325" width="0.127" layer="20" curve="90"/>
-<wire x1="2.17" y1="3.325" x2="2.17" y2="2.525" width="0.127" layer="20"/>
-<wire x1="2.17" y1="2.525" x2="2.52" y2="2.175" width="0.127" layer="20" curve="90"/>
-<wire x1="2.52" y1="2.175" x2="2.87" y2="2.525" width="0.127" layer="20" curve="90"/>
-<wire x1="2.87" y1="2.525" x2="2.87" y2="3.325" width="0.127" layer="20"/>
-<wire x1="2.87" y1="3.325" x2="2.52" y2="3.675" width="0.127" layer="20" curve="90"/>
-<wire x1="-2.52" y1="3.675" x2="-2.87" y2="3.325" width="0.127" layer="20" curve="90"/>
-<wire x1="-2.87" y1="3.325" x2="-2.87" y2="2.525" width="0.127" layer="20"/>
-<wire x1="-2.87" y1="2.525" x2="-2.52" y2="2.175" width="0.127" layer="20" curve="90"/>
-<wire x1="-2.52" y1="2.175" x2="-2.17" y2="2.525" width="0.127" layer="20" curve="90"/>
-<wire x1="-2.17" y1="2.525" x2="-2.17" y2="3.325" width="0.127" layer="20"/>
-<wire x1="-2.17" y1="3.325" x2="-2.52" y2="3.675" width="0.127" layer="20" curve="90"/>
-<wire x1="0" y1="0.625" x2="0" y2="4.775" width="0.9" layer="1"/>
-<wire x1="-1.27" y1="0.625" x2="-1.27" y2="4.775" width="0.9" layer="1"/>
-<wire x1="1.27" y1="0.625" x2="1.27" y2="0.635" width="0.9" layer="1"/>
-<wire x1="1.27" y1="0.635" x2="1.27" y2="4.175" width="0.9" layer="1"/>
-<wire x1="0" y1="2.07" x2="0" y2="4.775" width="0.9" layer="16"/>
-<wire x1="-1.27" y1="2.07" x2="-1.27" y2="4.175" width="0.9" layer="16"/>
-<wire x1="1.27" y1="2.07" x2="1.27" y2="4.775" width="0.9" layer="16"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="1.016" width="0.2" layer="16"/>
-<wire x1="-1.27" y1="1.016" x2="-0.889" y2="1.397" width="0.2" layer="16"/>
-<wire x1="-0.889" y1="1.397" x2="1.016" y2="1.397" width="0.2" layer="16"/>
-<wire x1="1.016" y1="1.397" x2="1.27" y2="1.651" width="0.2" layer="16"/>
-<wire x1="1.27" y1="1.651" x2="1.27" y2="1.778" width="0.2" layer="16"/>
-<wire x1="-2.286" y1="1.016" x2="-1.905" y2="1.397" width="0.2" layer="16"/>
-<wire x1="-1.905" y1="1.397" x2="-1.524" y2="1.397" width="0.2" layer="16"/>
-<wire x1="-1.524" y1="1.397" x2="-1.27" y2="1.651" width="0.2" layer="16"/>
-<wire x1="-1.27" y1="1.651" x2="-1.27" y2="1.778" width="0.2" layer="16"/>
-<wire x1="-2.286" y1="1.016" x2="-2.286" y2="0.127" width="0.2" layer="16"/>
-<wire x1="-2.286" y1="0.127" x2="-1.905" y2="-0.254" width="0.2" layer="16"/>
-<wire x1="0.635" y1="-0.635" x2="0.889" y2="-0.635" width="0.2" layer="1"/>
-<wire x1="0.889" y1="-0.635" x2="1.27" y2="-0.254" width="0.2" layer="1"/>
-<wire x1="1.27" y1="-0.254" x2="1.27" y2="0.635" width="0.2" layer="1"/>
-<wire x1="0.635" y1="-0.635" x2="0" y2="-0.635" width="0.2" layer="16"/>
-<wire x1="0" y1="-0.635" x2="-0.381" y2="-0.254" width="0.2" layer="16"/>
-<wire x1="-0.381" y1="-0.254" x2="-1.905" y2="-0.254" width="0.2" layer="16"/>
-<wire x1="1.27" y1="2.07" x2="1.27" y2="4.775" width="0.9" layer="30"/>
-<wire x1="0" y1="2.07" x2="0" y2="4.775" width="0.9" layer="30"/>
-<wire x1="-1.27" y1="2.07" x2="-1.27" y2="4.175" width="0.9" layer="30"/>
-<wire x1="1.27" y1="0.635" x2="1.27" y2="4.175" width="0.9" layer="29"/>
-<wire x1="0" y1="0.625" x2="0" y2="4.775" width="0.9" layer="29"/>
-<wire x1="-1.27" y1="0.625" x2="-1.27" y2="4.775" width="0.9" layer="29"/>
-</package>
 <package name="SWD-ADAPTER" urn="urn:adsk.eagle:footprint:30689627/1" library_version="60">
 <description>&lt;h3&gt;Plated Through Hole - 2x3&lt;/h3&gt;
 &lt;p&gt;Specifications:
@@ -14115,11 +14062,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 <packages3d>
-<package3d name="JACDAC-CONNECTOR" urn="urn:adsk.eagle:package:29236027/2" type="box" library_version="56">
-<packageinstances>
-<packageinstance name="JACDAC-CONNECTOR"/>
-</packageinstances>
-</package3d>
 <package3d name="SWD-ADAPTER" urn="urn:adsk.eagle:package:30689628/1" type="box" library_version="60">
 <description>&lt;h3&gt;Plated Through Hole - 2x3&lt;/h3&gt;
 &lt;p&gt;Specifications:
@@ -14291,17 +14233,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="JACDAC-PINS" urn="urn:adsk.eagle:symbol:29236022/1" library_version="55">
-<wire x1="3.81" y1="5.08" x2="-3.81" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-3.81" y1="5.08" x2="-3.81" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="-3.81" y1="-5.08" x2="3.81" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="3.81" y1="-5.08" x2="3.81" y2="5.08" width="0.4064" layer="94"/>
-<pin name="JD5V" x="0" y="-2.54" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="GND" x="0" y="0" length="short" direction="pas" function="dot" rot="R180"/>
-<pin name="JDF" x="0" y="2.54" length="short" direction="pas" function="dot" rot="R180"/>
-<text x="3.81" y="-5.715" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<text x="3.81" y="7.62" size="1.778" layer="96" rot="R180">&gt;VALUE</text>
-</symbol>
 <symbol name="SWD-ADAPTER" urn="urn:adsk.eagle:symbol:30689626/1" library_version="60">
 <wire x1="3.81" y1="-5.08" x2="-3.81" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="-3.81" y1="5.08" x2="-3.81" y2="-5.08" width="0.4064" layer="94"/>
@@ -14367,26 +14298,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="JACDAC-CONNECTOR" urn="urn:adsk.eagle:component:29236028/2" library_version="56">
-<gates>
-<gate name="G$1" symbol="JACDAC-PINS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="JACDAC-CONNECTOR">
-<connects>
-<connect gate="G$1" pin="GND" pad="P2"/>
-<connect gate="G$1" pin="JD5V" pad="P1"/>
-<connect gate="G$1" pin="JDF" pad="P3"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:29236027/2"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="SWD-ADAPTER-" urn="urn:adsk.eagle:component:30689629/1" library_version="60">
 <gates>
 <gate name="G$1" symbol="SWD-ADAPTER" x="0" y="0"/>
@@ -16909,6 +16820,408 @@ DIN A3, landscape with location and doc. field</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Jacdac" urn="urn:adsk.eagle:library:30688326">
+<description>&lt;h3&gt;Jadac Connectors&lt;/h3&gt;
+
+&lt;p&gt;This library contains connectors for creating Jacdac modules.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Learn more about Jacdac:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://microsoft.github.io/jacdac-docs/”&gt;Product Link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<packages>
+<package name="JACDAC-EDGE-CONN-OUTIE" urn="urn:adsk.eagle:footprint:30688331/1" library_version="1" library_locally_modified="yes">
+<description>&lt;h3&gt;Jacdac Edge Connector&lt;/h3&gt;
+&lt;p&gt;Variant: OUTIE&lt;/p&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/microsoft/jacdac-ddk/tree/main/connector"&gt;Jacdac Spec&lt;/a&gt;&lt;/li&gt;
+&lt;/p&gt;</description>
+<wire x1="2.17" y1="3.05" x2="2.52" y2="3.4" width="0.05" layer="46" curve="-90"/>
+<wire x1="2.52" y1="3.4" x2="2.87" y2="3.05" width="0.05" layer="46" curve="-90"/>
+<wire x1="2.87" y1="2.25" x2="2.52" y2="1.9" width="0.05" layer="46" curve="-90"/>
+<wire x1="2.52" y1="1.9" x2="2.17" y2="2.25" width="0.05" layer="46" curve="-90"/>
+<wire x1="2.17" y1="2.25" x2="2.17" y2="3.05" width="0.05" layer="46"/>
+<wire x1="2.87" y1="3.05" x2="2.87" y2="2.25" width="0.05" layer="46"/>
+<wire x1="-2.87" y1="3" x2="-2.52" y2="3.4" width="0.05" layer="46" curve="-90"/>
+<wire x1="-2.52" y1="3.4" x2="-2.17" y2="3.05" width="0.05" layer="46" curve="-90"/>
+<wire x1="-2.17" y1="2.25" x2="-2.52" y2="1.9" width="0.05" layer="46" curve="-90"/>
+<wire x1="-2.52" y1="1.9" x2="-2.87" y2="2.25" width="0.05" layer="46" curve="-90"/>
+<wire x1="-2.87" y1="2.25" x2="-2.87" y2="3" width="0.05" layer="46"/>
+<wire x1="-2.17" y1="3.05" x2="-2.17" y2="2.25" width="0.05" layer="46"/>
+<wire x1="-4.25" y1="0" x2="-3.27" y2="1" width="0.05" layer="20" curve="90" cap="flat"/>
+<wire x1="-3.27" y1="1" x2="-3.27" y2="5.05" width="0.05" layer="20"/>
+<wire x1="-3.27" y1="5.05" x2="-2.47" y2="5.85" width="0.05" layer="20" curve="-90"/>
+<wire x1="-2.47" y1="5.85" x2="2.47" y2="5.85" width="0.05" layer="20"/>
+<wire x1="2.47" y1="5.85" x2="3.27" y2="5.05" width="0.05" layer="20" curve="-90"/>
+<wire x1="3.27" y1="1" x2="4.25" y2="0" width="0.05" layer="20" curve="90"/>
+<wire x1="3.27" y1="5.05" x2="3.27" y2="1" width="0.05" layer="20"/>
+<wire x1="-4.75" y1="0.5" x2="-4.75" y2="14" width="0.05" layer="51"/>
+<wire x1="4.75" y1="0.5" x2="4.75" y2="14" width="0.05" layer="51"/>
+<wire x1="-2.75" y1="18.85" x2="2.175" y2="18.85" width="0.05" layer="51"/>
+<wire x1="2.175" y1="18.85" x2="2.75" y2="18.85" width="0.05" layer="51"/>
+<wire x1="-4.25" y1="0" x2="-5.25" y2="1" width="0.05" layer="20" curve="-90"/>
+<wire x1="4.25" y1="0" x2="5.25" y2="1" width="0.05" layer="20" curve="90"/>
+<wire x1="-4.6" y1="0.35" x2="4.6" y2="0.35" width="0.05" layer="51"/>
+<wire x1="-4.75" y1="0.5" x2="-4.6" y2="0.35" width="0.05" layer="51" curve="90"/>
+<wire x1="4.6" y1="0.35" x2="4.75" y2="0.5" width="0.05" layer="51" curve="90"/>
+<wire x1="-2.175" y1="18.85" x2="-2.175" y2="20.85" width="0.05" layer="51"/>
+<wire x1="-3" y1="17.85" x2="-3" y2="18.55" width="0.05" layer="51"/>
+<wire x1="2.175" y1="18.85" x2="2.175" y2="20.85" width="0.05" layer="51"/>
+<wire x1="-2.75" y1="18.85" x2="-3" y2="18.55" width="0.05" layer="51" curve="90"/>
+<wire x1="2.75" y1="18.85" x2="3" y2="18.55" width="0.05" layer="51" curve="-90"/>
+<wire x1="-4" y1="15.125" x2="-3.025" y2="17.25" width="0.05" layer="51" curve="40"/>
+<wire x1="-3.025" y1="17.25" x2="-3" y2="17.85" width="0.05" layer="51" curve="4.521607"/>
+<wire x1="-4" y1="15.125" x2="-4.525" y2="14.575" width="0.05" layer="51" curve="-3"/>
+<wire x1="-4.525" y1="14.575" x2="-4.75" y2="14" width="0.05" layer="51" curve="50"/>
+<wire x1="3" y1="17.85" x2="3" y2="18.55" width="0.05" layer="51"/>
+<wire x1="4" y1="15.125" x2="3.025" y2="17.25" width="0.05" layer="51" curve="-40"/>
+<wire x1="3.025" y1="17.25" x2="3" y2="17.85" width="0.05" layer="51" curve="4.521607"/>
+<wire x1="4" y1="15.125" x2="4.525" y2="14.575" width="0.05" layer="51" curve="3"/>
+<wire x1="4.525" y1="14.575" x2="4.75" y2="14" width="0.05" layer="51" curve="-50"/>
+<smd name="JD2" x="1.27" y="2.5" dx="0.9" dy="4.3" layer="1" roundness="80" cream="no"/>
+<smd name="GND3" x="0" y="2.75" dx="0.9" dy="4.8" layer="1" roundness="80" cream="no"/>
+<smd name="VDD2" x="-1.27" y="2.75" dx="0.9" dy="4.8" layer="1" roundness="80" cream="no"/>
+<smd name="VDD3" x="1.27" y="3.425" dx="0.9" dy="3.45" layer="16" roundness="80" rot="R180" cream="no"/>
+<smd name="GND2" x="0" y="3.425" dx="0.9" dy="3.45" layer="16" roundness="80" rot="R180" cream="no"/>
+<smd name="JD3" x="-1.27" y="3.175" dx="0.9" dy="2.95" layer="16" roundness="80" rot="R180" cream="no"/>
+<pad name="VDD1" x="-1.27" y="0.55" drill="0.71" diameter="1.1"/>
+<pad name="GND1" x="0" y="0.55" drill="0.71" diameter="1.1"/>
+<pad name="JD1" x="1.27" y="0.55" drill="0.71" diameter="1.1"/>
+<pad name="GND4" x="0" y="3.425" drill="0.3" diameter="0.6"/>
+<text x="-2.738" y="7.175" size="0.254" layer="51" font="vector">Use 0.25mm grid for innie/outie.</text>
+<text x="-0.5" y="6.25" size="0.6096" layer="21" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.774" y="-0.858" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<text x="0" y="12.5" size="0.8128" layer="51" font="vector" ratio="10" align="center">Jacdac
+cable connector
+body</text>
+<polygon width="0.05" layer="41">
+<vertex x="-3.25" y="1.75"/>
+<vertex x="-3.27" y="5.05" curve="-90"/>
+<vertex x="-2.47" y="5.85"/>
+<vertex x="2.47" y="5.85" curve="-90"/>
+<vertex x="3.27" y="5.05"/>
+<vertex x="3.25" y="1.75"/>
+<vertex x="2" y="1.75"/>
+<vertex x="2" y="4.75" curve="90"/>
+<vertex x="1.5" y="5.25"/>
+<vertex x="-1.5" y="5.25" curve="90"/>
+<vertex x="-2" y="4.75"/>
+<vertex x="-2" y="1.75"/>
+</polygon>
+<polygon width="0.05" layer="42">
+<vertex x="-3.25" y="1.75"/>
+<vertex x="-3.27" y="5.05" curve="-90"/>
+<vertex x="-2.47" y="5.85"/>
+<vertex x="2.47" y="5.85" curve="-90"/>
+<vertex x="3.27" y="5.05"/>
+<vertex x="3.25" y="1.75"/>
+<vertex x="2" y="1.75"/>
+<vertex x="2" y="4.75" curve="90"/>
+<vertex x="1.5" y="5.25"/>
+<vertex x="-1.5" y="5.25" curve="90"/>
+<vertex x="-2" y="4.75"/>
+<vertex x="-2" y="1.75"/>
+</polygon>
+</package>
+<package name="JACDAC-EDGE-CONN-INNIE" urn="urn:adsk.eagle:footprint:30688329/1" library_version="1" library_locally_modified="yes">
+<description>&lt;h3&gt;Jacdac Edge Connector&lt;/h3&gt;
+&lt;p&gt;Variant: INNIE&lt;/p&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/microsoft/jacdac-ddk/tree/main/connector"&gt;Jacdac Spec&lt;/a&gt;&lt;/li&gt;
+&lt;/p&gt;</description>
+<wire x1="2.17" y1="3.05" x2="2.52" y2="3.4" width="0.05" layer="46" curve="-90"/>
+<wire x1="2.52" y1="3.4" x2="2.87" y2="3.05" width="0.05" layer="46" curve="-90"/>
+<wire x1="2.87" y1="2.25" x2="2.52" y2="1.9" width="0.05" layer="46" curve="-90"/>
+<wire x1="2.52" y1="1.9" x2="2.17" y2="2.25" width="0.05" layer="46" curve="-90"/>
+<wire x1="2.17" y1="2.25" x2="2.17" y2="3.05" width="0.05" layer="46"/>
+<wire x1="2.87" y1="3.05" x2="2.87" y2="2.25" width="0.05" layer="46"/>
+<wire x1="-2.87" y1="3" x2="-2.52" y2="3.4" width="0.05" layer="46" curve="-90"/>
+<wire x1="-2.52" y1="3.4" x2="-2.17" y2="3.05" width="0.05" layer="46" curve="-90"/>
+<wire x1="-2.17" y1="2.25" x2="-2.52" y2="1.9" width="0.05" layer="46" curve="-90"/>
+<wire x1="-2.52" y1="1.9" x2="-2.87" y2="2.25" width="0.05" layer="46" curve="-90"/>
+<wire x1="-2.87" y1="2.25" x2="-2.87" y2="3" width="0.05" layer="46"/>
+<wire x1="-2.17" y1="3.05" x2="-2.17" y2="2.25" width="0.05" layer="46"/>
+<wire x1="-4.25" y1="0" x2="-3.27" y2="1" width="0.05" layer="20" curve="90" cap="flat"/>
+<wire x1="-3.27" y1="1" x2="-3.27" y2="5.05" width="0.05" layer="20"/>
+<wire x1="-3.27" y1="5.05" x2="-2.47" y2="5.85" width="0.05" layer="20" curve="-90"/>
+<wire x1="-2.47" y1="5.85" x2="2.47" y2="5.85" width="0.05" layer="20"/>
+<wire x1="2.47" y1="5.85" x2="3.27" y2="5.05" width="0.05" layer="20" curve="-90"/>
+<wire x1="3.27" y1="1" x2="4.25" y2="0" width="0.05" layer="20" curve="90"/>
+<wire x1="3.27" y1="5.05" x2="3.27" y2="1" width="0.05" layer="20"/>
+<wire x1="-4.75" y1="0.5" x2="-4.75" y2="14" width="0.05" layer="51"/>
+<wire x1="4.75" y1="0.5" x2="4.75" y2="14" width="0.05" layer="51"/>
+<wire x1="-2.75" y1="18.85" x2="2.175" y2="18.85" width="0.05" layer="51"/>
+<wire x1="2.175" y1="18.85" x2="2.75" y2="18.85" width="0.05" layer="51"/>
+<wire x1="-4.6" y1="0.35" x2="4.6" y2="0.35" width="0.05" layer="51"/>
+<wire x1="-4.75" y1="0.5" x2="-4.6" y2="0.35" width="0.05" layer="51" curve="90"/>
+<wire x1="4.6" y1="0.35" x2="4.75" y2="0.5" width="0.05" layer="51" curve="90"/>
+<wire x1="-2.175" y1="18.85" x2="-2.175" y2="20.85" width="0.05" layer="51"/>
+<wire x1="-3" y1="17.85" x2="-3" y2="18.55" width="0.05" layer="51"/>
+<wire x1="2.175" y1="18.85" x2="2.175" y2="20.85" width="0.05" layer="51"/>
+<wire x1="-2.75" y1="18.85" x2="-3" y2="18.55" width="0.05" layer="51" curve="90"/>
+<wire x1="2.75" y1="18.85" x2="3" y2="18.55" width="0.05" layer="51" curve="-90"/>
+<wire x1="-4" y1="15.125" x2="-3.025" y2="17.25" width="0.05" layer="51" curve="40"/>
+<wire x1="-3.025" y1="17.25" x2="-3" y2="17.85" width="0.05" layer="51" curve="4.521607"/>
+<wire x1="-4" y1="15.125" x2="-4.525" y2="14.575" width="0.05" layer="51" curve="-3"/>
+<wire x1="-4.525" y1="14.575" x2="-4.75" y2="14" width="0.05" layer="51" curve="50"/>
+<wire x1="3" y1="17.85" x2="3" y2="18.55" width="0.05" layer="51"/>
+<wire x1="4" y1="15.125" x2="3.025" y2="17.25" width="0.05" layer="51" curve="-40"/>
+<wire x1="3.025" y1="17.25" x2="3" y2="17.85" width="0.05" layer="51" curve="4.521607"/>
+<wire x1="4" y1="15.125" x2="4.525" y2="14.575" width="0.05" layer="51" curve="3"/>
+<wire x1="4.525" y1="14.575" x2="4.75" y2="14" width="0.05" layer="51" curve="-50"/>
+<wire x1="-4.25" y1="0" x2="-5.25" y2="0" width="0.05" layer="20"/>
+<wire x1="4.25" y1="0" x2="5.25" y2="0" width="0.05" layer="20"/>
+<smd name="JD2" x="1.27" y="2.5" dx="0.9" dy="4.3" layer="1" roundness="80" cream="no"/>
+<smd name="GND3" x="0" y="2.75" dx="0.9" dy="4.8" layer="1" roundness="80" cream="no"/>
+<smd name="VDD2" x="-1.27" y="2.75" dx="0.9" dy="4.8" layer="1" roundness="80" cream="no"/>
+<smd name="VDD3" x="1.27" y="3.425" dx="0.9" dy="3.45" layer="16" roundness="80" rot="R180" cream="no"/>
+<smd name="GND2" x="0" y="3.425" dx="0.9" dy="3.45" layer="16" roundness="80" rot="R180" cream="no"/>
+<smd name="JD3" x="-1.27" y="3.175" dx="0.9" dy="2.95" layer="16" roundness="80" rot="R180" cream="no"/>
+<pad name="VDD1" x="-1.27" y="0.55" drill="0.71" diameter="1.1"/>
+<pad name="GND1" x="0" y="0.55" drill="0.71" diameter="1.1"/>
+<pad name="JD1" x="1.27" y="0.55" drill="0.71" diameter="1.1"/>
+<pad name="GND4" x="0" y="3.425" drill="0.3" diameter="0.6"/>
+<text x="-2.738" y="7.175" size="0.254" layer="51" font="vector">Use 0.25mm grid for innie/outie.</text>
+<text x="-0.5" y="6.25" size="0.6096" layer="21" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.774" y="-0.858" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<text x="0" y="12.5" size="0.8128" layer="51" font="vector" ratio="10" align="center">Jacdac
+cable connector
+body</text>
+<polygon width="0.05" layer="41">
+<vertex x="-3.25" y="1.75"/>
+<vertex x="-3.27" y="5.05" curve="-90"/>
+<vertex x="-2.47" y="5.85"/>
+<vertex x="2.47" y="5.85" curve="-90"/>
+<vertex x="3.27" y="5.05"/>
+<vertex x="3.25" y="1.75"/>
+<vertex x="2" y="1.75"/>
+<vertex x="2" y="4.75" curve="90"/>
+<vertex x="1.5" y="5.25"/>
+<vertex x="-1.5" y="5.25" curve="90"/>
+<vertex x="-2" y="4.75"/>
+<vertex x="-2" y="1.75"/>
+</polygon>
+<polygon width="0.05" layer="42">
+<vertex x="-3.25" y="1.75"/>
+<vertex x="-3.27" y="5.05" curve="-90"/>
+<vertex x="-2.47" y="5.85"/>
+<vertex x="2.47" y="5.85" curve="-90"/>
+<vertex x="3.27" y="5.05"/>
+<vertex x="3.25" y="1.75"/>
+<vertex x="2" y="1.75"/>
+<vertex x="2" y="4.75" curve="90"/>
+<vertex x="1.5" y="5.25"/>
+<vertex x="-1.5" y="5.25" curve="90"/>
+<vertex x="-2" y="4.75"/>
+<vertex x="-2" y="1.75"/>
+</polygon>
+</package>
+<package name="JACDAC-EDGE-CONN-ANY" urn="urn:adsk.eagle:footprint:30688328/1" library_version="1" library_locally_modified="yes">
+<description>&lt;h3&gt;Jacdac Edge Connector&lt;/h3&gt;
+&lt;p&gt;Variant: ANY&lt;/p&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/microsoft/jacdac-ddk/tree/main/connector"&gt;Jacdac Spec&lt;/a&gt;&lt;/li&gt;
+&lt;/p&gt;</description>
+<wire x1="2.17" y1="3.05" x2="2.52" y2="3.4" width="0.05" layer="46" curve="-90"/>
+<wire x1="2.52" y1="3.4" x2="2.87" y2="3.05" width="0.05" layer="46" curve="-90"/>
+<wire x1="2.87" y1="2.25" x2="2.52" y2="1.9" width="0.05" layer="46" curve="-90"/>
+<wire x1="2.52" y1="1.9" x2="2.17" y2="2.25" width="0.05" layer="46" curve="-90"/>
+<wire x1="2.17" y1="2.25" x2="2.17" y2="3.05" width="0.05" layer="46"/>
+<wire x1="2.87" y1="3.05" x2="2.87" y2="2.25" width="0.05" layer="46"/>
+<wire x1="-2.87" y1="3" x2="-2.52" y2="3.4" width="0.05" layer="46" curve="-90"/>
+<wire x1="-2.52" y1="3.4" x2="-2.17" y2="3.05" width="0.05" layer="46" curve="-90"/>
+<wire x1="-2.17" y1="2.25" x2="-2.52" y2="1.9" width="0.05" layer="46" curve="-90"/>
+<wire x1="-2.52" y1="1.9" x2="-2.87" y2="2.25" width="0.05" layer="46" curve="-90"/>
+<wire x1="-2.87" y1="2.25" x2="-2.87" y2="3" width="0.05" layer="46"/>
+<wire x1="-2.17" y1="3.05" x2="-2.17" y2="2.25" width="0.05" layer="46"/>
+<wire x1="-3.27" y1="0" x2="-3.27" y2="5.05" width="0.05" layer="20"/>
+<wire x1="-3.27" y1="5.05" x2="-2.47" y2="5.85" width="0.05" layer="20" curve="-90"/>
+<wire x1="-2.47" y1="5.85" x2="2.47" y2="5.85" width="0.05" layer="20"/>
+<wire x1="2.47" y1="5.85" x2="3.27" y2="5.05" width="0.05" layer="20" curve="-90"/>
+<wire x1="3.27" y1="5.05" x2="3.27" y2="0" width="0.05" layer="20"/>
+<wire x1="-4.75" y1="0.5" x2="-4.75" y2="14" width="0.05" layer="51"/>
+<wire x1="4.75" y1="0.5" x2="4.75" y2="14" width="0.05" layer="51"/>
+<wire x1="-2.75" y1="18.85" x2="2.175" y2="18.85" width="0.05" layer="51"/>
+<wire x1="2.175" y1="18.85" x2="2.75" y2="18.85" width="0.05" layer="51"/>
+<wire x1="-4.6" y1="0.35" x2="4.6" y2="0.35" width="0.05" layer="51"/>
+<wire x1="-4.75" y1="0.5" x2="-4.6" y2="0.35" width="0.05" layer="51" curve="90"/>
+<wire x1="4.6" y1="0.35" x2="4.75" y2="0.5" width="0.05" layer="51" curve="90"/>
+<wire x1="-2.175" y1="18.85" x2="-2.175" y2="20.85" width="0.05" layer="51"/>
+<wire x1="-3" y1="17.85" x2="-3" y2="18.55" width="0.05" layer="51"/>
+<wire x1="2.175" y1="18.85" x2="2.175" y2="20.85" width="0.05" layer="51"/>
+<wire x1="-2.75" y1="18.85" x2="-3" y2="18.55" width="0.05" layer="51" curve="90"/>
+<wire x1="2.75" y1="18.85" x2="3" y2="18.55" width="0.05" layer="51" curve="-90"/>
+<wire x1="-4" y1="15.125" x2="-3.025" y2="17.25" width="0.05" layer="51" curve="40"/>
+<wire x1="-3.025" y1="17.25" x2="-3" y2="17.85" width="0.05" layer="51" curve="4.521607"/>
+<wire x1="-4" y1="15.125" x2="-4.525" y2="14.575" width="0.05" layer="51" curve="-3"/>
+<wire x1="-4.525" y1="14.575" x2="-4.75" y2="14" width="0.05" layer="51" curve="50"/>
+<wire x1="3" y1="17.85" x2="3" y2="18.55" width="0.05" layer="51"/>
+<wire x1="4" y1="15.125" x2="3.025" y2="17.25" width="0.05" layer="51" curve="-40"/>
+<wire x1="3.025" y1="17.25" x2="3" y2="17.85" width="0.05" layer="51" curve="4.521607"/>
+<wire x1="4" y1="15.125" x2="4.525" y2="14.575" width="0.05" layer="51" curve="3"/>
+<wire x1="4.525" y1="14.575" x2="4.75" y2="14" width="0.05" layer="51" curve="-50"/>
+<smd name="JD2" x="1.27" y="2.5" dx="0.9" dy="4.3" layer="1" roundness="80" cream="no"/>
+<smd name="GND3" x="0" y="2.75" dx="0.9" dy="4.8" layer="1" roundness="80" cream="no"/>
+<smd name="VDD2" x="-1.27" y="2.75" dx="0.9" dy="4.8" layer="1" roundness="80" cream="no"/>
+<smd name="VDD3" x="1.27" y="3.425" dx="0.9" dy="3.45" layer="16" roundness="80" rot="R180" cream="no"/>
+<smd name="GND2" x="0" y="3.425" dx="0.9" dy="3.45" layer="16" roundness="80" rot="R180" cream="no"/>
+<smd name="JD3" x="-1.27" y="3.175" dx="0.9" dy="2.95" layer="16" roundness="80" rot="R180" cream="no"/>
+<pad name="VDD1" x="-1.27" y="0.55" drill="0.71" diameter="1.1"/>
+<pad name="GND1" x="0" y="0.55" drill="0.71" diameter="1.1"/>
+<pad name="JD1" x="1.27" y="0.55" drill="0.71" diameter="1.1"/>
+<pad name="GND4" x="0" y="3.425" drill="0.3" diameter="0.6"/>
+<text x="-2.738" y="7.175" size="0.254" layer="51" font="vector">Use 0.25mm grid for innie/outie.</text>
+<text x="-0.5" y="6.25" size="0.6096" layer="21" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.774" y="-0.858" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<text x="0" y="12.5" size="0.8128" layer="51" font="vector" ratio="10" align="center">Jacdac
+cable connector
+body</text>
+<polygon width="0.05" layer="41">
+<vertex x="-3.25" y="1.75"/>
+<vertex x="-3.25" y="5.05" curve="-90"/>
+<vertex x="-2.47" y="5.85"/>
+<vertex x="2.47" y="5.85" curve="-90"/>
+<vertex x="3.25" y="5.05"/>
+<vertex x="3.25" y="1.75"/>
+<vertex x="2" y="1.75"/>
+<vertex x="2" y="4.75" curve="90"/>
+<vertex x="1.5" y="5.25"/>
+<vertex x="-1.5" y="5.25" curve="90"/>
+<vertex x="-2" y="4.75"/>
+<vertex x="-2" y="1.75"/>
+</polygon>
+<polygon width="0.05" layer="42">
+<vertex x="-3.25" y="1.75"/>
+<vertex x="-3.25" y="5.05" curve="-90"/>
+<vertex x="-2.47" y="5.85"/>
+<vertex x="2.47" y="5.85" curve="-90"/>
+<vertex x="3.25" y="5.05"/>
+<vertex x="3.25" y="1.75"/>
+<vertex x="2" y="1.75"/>
+<vertex x="2" y="4.75" curve="90"/>
+<vertex x="1.5" y="5.25"/>
+<vertex x="-1.5" y="5.25" curve="90"/>
+<vertex x="-2" y="4.75"/>
+<vertex x="-2" y="1.75"/>
+</polygon>
+</package>
+</packages>
+<packages3d>
+<package3d name="JACDAC-EDGE-CONN-OUTIE" urn="urn:adsk.eagle:package:30688337/1" type="box" library_version="1" library_locally_modified="yes">
+<description>&lt;h3&gt;Jacdac Edge Connector&lt;/h3&gt;
+&lt;p&gt;Variant: OUTIE&lt;/p&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/microsoft/jacdac-ddk/tree/main/connector"&gt;Jacdac Spec&lt;/a&gt;&lt;/li&gt;
+&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="JACDAC-EDGE-CONN-OUTIE"/>
+</packageinstances>
+</package3d>
+<package3d name="JACDAC-EDGE-CONN-INNIE" urn="urn:adsk.eagle:package:30688335/1" type="box" library_version="1" library_locally_modified="yes">
+<description>&lt;h3&gt;Jacdac Edge Connector&lt;/h3&gt;
+&lt;p&gt;Variant: INNIE&lt;/p&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/microsoft/jacdac-ddk/tree/main/connector"&gt;Jacdac Spec&lt;/a&gt;&lt;/li&gt;
+&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="JACDAC-EDGE-CONN-INNIE"/>
+</packageinstances>
+</package3d>
+<package3d name="JACDAC-EDGE-CONN-ANY" urn="urn:adsk.eagle:package:30688334/1" type="box" library_version="1" library_locally_modified="yes">
+<description>&lt;h3&gt;Jacdac Edge Connector&lt;/h3&gt;
+&lt;p&gt;Variant: ANY&lt;/p&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/microsoft/jacdac-ddk/tree/main/connector"&gt;Jacdac Spec&lt;/a&gt;&lt;/li&gt;
+&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="JACDAC-EDGE-CONN-ANY"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="JACDAC_EDGE_CONN" urn="urn:adsk.eagle:symbol:30688333/1" library_version="1" library_locally_modified="yes">
+<description>&lt;h3&gt;Jacdac edge connector&lt;/h3&gt;</description>
+<wire x1="0" y1="-2.54" x2="-6.35" y2="-2.54" width="1.778" layer="94"/>
+<wire x1="0" y1="-5.08" x2="-6.35" y2="-5.08" width="1.778" layer="94"/>
+<wire x1="0" y1="-7.62" x2="-5.08" y2="-7.62" width="1.778" layer="94"/>
+<wire x1="0" y1="2.54" x2="-2.54" y2="0" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="-12.7" x2="-2.54" y2="-10.16" width="0.254" layer="94" curve="90"/>
+<wire x1="-12.7" y1="-2.54" x2="-10.16" y2="0" width="0.254" layer="94" curve="-90"/>
+<wire x1="-10.16" y1="-10.16" x2="-12.7" y2="-7.62" width="0.254" layer="94" curve="-90"/>
+<wire x1="-10.16" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-2.54" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94" style="longdash"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-12.7" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<pin name="2" x="5.08" y="-5.08" visible="pad" length="middle" direction="pwr" swaplevel="1" rot="R180"/>
+<pin name="3" x="5.08" y="-2.54" visible="pad" length="middle" direction="pwr" swaplevel="1" rot="R180"/>
+<pin name="1" x="5.08" y="-7.62" visible="pad" length="middle" swaplevel="1" rot="R180"/>
+<text x="-7.62" y="-7.62" size="1.778" layer="94" font="vector" align="center-right">JD</text>
+<text x="-7.62" y="-2.54" size="1.778" layer="94" font="vector" align="center-right">5V</text>
+<text x="-7.62" y="-5.08" size="1.778" layer="94" font="vector" align="center-right">GND</text>
+<text x="-10.16" y="-15.24" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<text x="-10.16" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="JACDAC_EDGE_CONN" urn="urn:adsk.eagle:component:30688339/1" locally_modified="yes" prefix="JD" library_version="1" library_locally_modified="yes">
+<description>&lt;h3&gt;Jadac Edge Connector&lt;/h3&gt;
+&lt;p&gt;Used for creating Jacdac modules.&lt;/p&gt;
+
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/microsoft/jacdac-ddk/tree/main/connector"&gt;Jacdac Spec&lt;/a&gt;&lt;/li&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Learn more about Jacdac:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://microsoft.github.io/jacdac-docs/”&gt;Product Link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="JACDAC_EDGE_CONN" x="7.62" y="0"/>
+</gates>
+<devices>
+<device name="-OUTIE" package="JACDAC-EDGE-CONN-OUTIE">
+<connects>
+<connect gate="G$1" pin="1" pad="JD1 JD2 JD3"/>
+<connect gate="G$1" pin="2" pad="GND1 GND2 GND3 GND4"/>
+<connect gate="G$1" pin="3" pad="VDD1 VDD2 VDD3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:30688337/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-INNIE" package="JACDAC-EDGE-CONN-INNIE">
+<connects>
+<connect gate="G$1" pin="1" pad="JD1 JD2 JD3"/>
+<connect gate="G$1" pin="2" pad="GND1 GND2 GND3 GND4"/>
+<connect gate="G$1" pin="3" pad="VDD1 VDD2 VDD3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:30688335/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-ANY" package="JACDAC-EDGE-CONN-ANY">
+<connects>
+<connect gate="G$1" pin="1" pad="JD1 JD2 JD3"/>
+<connect gate="G$1" pin="2" pad="GND1 GND2 GND3 GND4"/>
+<connect gate="G$1" pin="3" pad="VDD1 VDD2 VDD3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:30688334/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -16921,7 +17234,6 @@ DIN A3, landscape with location and doc. field</description>
 <parts>
 <part name="JP3" library="milador" library_urn="urn:adsk.eagle:library:12595918" deviceset="STAND-OFF-" device="3.0" package3d_urn="urn:adsk.eagle:package:30775187/1"/>
 <part name="H2" library="milador" library_urn="urn:adsk.eagle:library:12595918" deviceset="STAND-OFF-" device="3.0" package3d_urn="urn:adsk.eagle:package:30775187/1"/>
-<part name="J1" library="milador" library_urn="urn:adsk.eagle:library:12595918" deviceset="JACDAC-CONNECTOR" device="" package3d_urn="urn:adsk.eagle:package:29236027/2"/>
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="U4" library="milador_SMD" library_urn="urn:adsk.eagle:library:27847482" deviceset="LPS33HWTR" device="" package3d_urn="urn:adsk.eagle:package:30688697/3"/>
@@ -16974,6 +17286,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="D2" library="milador_SMD" library_urn="urn:adsk.eagle:library:27847482" deviceset="DIODE-ZENER-AA-" device="RCLAMP0521PATCT" package3d_urn="urn:adsk.eagle:package:30689290/6" value="RCLAMP0521PATCT"/>
 <part name="D3" library="milador_SMD" library_urn="urn:adsk.eagle:library:27847482" deviceset="DIODE-ZENER-AA-" device="RCLAMP0521PATCT" package3d_urn="urn:adsk.eagle:package:30689290/6" value="RCLAMP0521PATCT"/>
+<part name="J1" library="Jacdac" library_urn="urn:adsk.eagle:library:30688326" deviceset="JACDAC_EDGE_CONN" device="-INNIE" package3d_urn="urn:adsk.eagle:package:30688335/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -17005,10 +17318,6 @@ DIN A3, landscape with location and doc. field</description>
 <instances>
 <instance part="JP3" gate="G$1" x="360.68" y="78.74" smashed="yes"/>
 <instance part="H2" gate="G$1" x="360.68" y="71.12" smashed="yes"/>
-<instance part="J1" gate="G$1" x="76.2" y="144.78" smashed="yes" rot="MR180">
-<attribute name="NAME" x="80.01" y="150.495" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="80.01" y="137.16" size="1.778" layer="96" rot="MR0"/>
-</instance>
 <instance part="GND1" gate="1" x="124.46" y="111.76" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="124.46" y="108.966" size="1.778" layer="96" font="vector" rot="MR0" align="top-center"/>
 </instance>
@@ -17182,6 +17491,10 @@ DIN A3, landscape with location and doc. field</description>
 <attribute name="NAME" x="143.9474" y="127.1618" size="2.0828" layer="95" ratio="6" rot="SR90"/>
 <attribute name="VALUE" x="153.732" y="111.5756" size="2.0828" layer="96" ratio="6" rot="SR90"/>
 </instance>
+<instance part="J1" gate="G$1" x="64.008" y="149.86" smashed="yes">
+<attribute name="VALUE" x="53.848" y="134.62" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="53.848" y="152.4" size="1.778" layer="95" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -17199,8 +17512,7 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="124.46" y1="213.36" x2="124.46" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="GND"/>
-<wire x1="76.2" y1="144.78" x2="111.76" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="69.088" y1="144.78" x2="111.76" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="144.78" x2="111.76" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="116.84" x2="124.46" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -17208,6 +17520,7 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="124.46" y="116.84"/>
 <pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="124.46" y1="125.4694" x2="124.46" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
@@ -17275,14 +17588,14 @@ DIN A3, landscape with location and doc. field</description>
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="JD5V"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="76.2" y1="147.32" x2="124.46" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="69.088" y1="147.32" x2="124.46" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="147.32" x2="129.54" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="147.32" x2="129.54" y2="157.48" width="0.1524" layer="91"/>
 <junction x="124.46" y="147.32"/>
 <pinref part="D2" gate="G$1" pin="A2"/>
 <wire x1="124.46" y1="134.1694" x2="124.46" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <pinref part="U1" gate="A" pin="IN"/>
@@ -17300,10 +17613,9 @@ DIN A3, landscape with location and doc. field</description>
 <junction x="22.86" y="223.52"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="J_DATA" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="JDF"/>
-<wire x1="76.2" y1="142.24" x2="147.066" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="69.088" y1="142.24" x2="147.066" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="FB1" gate="G$1" pin="2"/>
 <wire x1="147.066" y1="142.24" x2="160.02" y2="142.24" width="0.1524" layer="91"/>
 <junction x="147.066" y="142.24"/>
@@ -17311,6 +17623,7 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="147.066" y1="140.843" x2="147.0406" y2="139.065" width="0.1524" layer="91"/>
 <pinref part="D3" gate="G$1" pin="A2"/>
 <wire x1="147.0406" y1="139.065" x2="147.066" y2="136.5062" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -17527,43 +17840,7 @@ DIN A3, landscape with location and doc. field</description>
 <label x="363.22" y="175.26" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="SCK" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="PA5"/>
-<wire x1="353.06" y1="160.02" x2="363.22" y2="160.02" width="0.1524" layer="91"/>
-<label x="353.06" y="160.02" size="1.778" layer="95"/>
-<label x="363.22" y="160.02" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<label x="33.02" y="68.58" size="1.778" layer="95"/>
-<label x="38.1" y="68.58" size="1.778" layer="95" xref="yes"/>
-<pinref part="J3" gate="G$1" pin="3"/>
-<wire x1="38.1" y1="68.58" x2="20.32" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U4" gate="G$1" pin="SCL/SPC"/>
-<wire x1="101.6" y1="55.88" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
-<label x="91.44" y="55.88" size="1.778" layer="95"/>
-<label x="93.98" y="55.88" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<wire x1="198.12" y1="43.18" x2="220.98" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="SJ1" gate="1" pin="1"/>
-<wire x1="220.98" y1="43.18" x2="220.98" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="43.18" x2="236.22" y2="43.18" width="0.1524" layer="91"/>
-<junction x="220.98" y="43.18"/>
-<label x="200.66" y="45.72" size="1.778" layer="95"/>
-<label x="198.12" y="43.18" size="1.778" layer="95" rot="R180" xref="yes"/>
-<label x="236.22" y="43.18" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="SDA" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="PA7"/>
-<wire x1="353.06" y1="149.86" x2="363.22" y2="149.86" width="0.1524" layer="91"/>
-<label x="353.06" y="149.86" size="1.778" layer="95"/>
-<label x="363.22" y="149.86" size="1.778" layer="95" xref="yes"/>
-</segment>
 <segment>
 <label x="33.02" y="63.5" size="1.778" layer="95"/>
 <label x="38.1" y="66.04" size="1.778" layer="95" xref="yes"/>
@@ -17585,6 +17862,12 @@ DIN A3, landscape with location and doc. field</description>
 <label x="231.14" y="30.48" size="1.778" layer="95"/>
 <label x="223.52" y="27.94" size="1.778" layer="95" rot="R180" xref="yes"/>
 <label x="271.78" y="27.94" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="PA12"/>
+<wire x1="287.02" y1="180.34" x2="281.94" y2="180.34" width="0.1524" layer="91"/>
+<label x="281.686" y="180.34" size="1.778" layer="95" rot="R180" xref="yes"/>
+<label x="286.258" y="182.372" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="CS" class="0">
@@ -17642,12 +17925,46 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="256.54" y1="43.18" x2="256.54" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="SCL" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="PA11"/>
+<wire x1="287.02" y1="185.42" x2="281.7114" y2="185.42" width="0.1524" layer="91"/>
+<label x="281.686" y="186.182" size="1.778" layer="95"/>
+<label x="281.686" y="185.42" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<label x="33.02" y="68.58" size="1.778" layer="95"/>
+<label x="38.1" y="68.58" size="1.778" layer="95" xref="yes"/>
+<pinref part="J3" gate="G$1" pin="3"/>
+<wire x1="38.1" y1="68.58" x2="20.32" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="SCL/SPC"/>
+<wire x1="101.6" y1="55.88" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
+<label x="91.44" y="55.88" size="1.778" layer="95"/>
+<label x="93.98" y="55.88" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="198.12" y1="43.18" x2="220.98" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="SJ1" gate="1" pin="1"/>
+<wire x1="220.98" y1="43.18" x2="220.98" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="43.18" x2="236.22" y2="43.18" width="0.1524" layer="91"/>
+<junction x="220.98" y="43.18"/>
+<label x="200.66" y="45.72" size="1.778" layer="95"/>
+<label x="198.12" y="43.18" size="1.778" layer="95" rot="R180" xref="yes"/>
+<label x="236.22" y="43.18" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
