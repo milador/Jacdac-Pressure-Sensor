@@ -6812,7 +6812,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <attribute name="MOUSER" value="511-STM32F042F6P6" x="17.78" y="8.382" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="14.224" y="8.382" size="0.8128" layer="25" ratio="15" rot="R90" align="bottom-center"/>
 </element>
-<element name="C5" library="milador_SMD" library_urn="urn:adsk.eagle:library:27847482" package="0805-MP" package3d_urn="urn:adsk.eagle:package:27847629/3" value="33pF" x="15.24" y="13.462" smashed="yes">
+<element name="C5" library="milador_SMD" library_urn="urn:adsk.eagle:library:27847482" package="0805-MP" package3d_urn="urn:adsk.eagle:package:27847629/3" value="1uF" x="15.24" y="13.462" smashed="yes">
 <attribute name="NAME" x="12.8524" y="12.9286" size="0.8128" layer="25" font="vector" ratio="15" align="bottom-center"/>
 <attribute name="VALUE" x="13.0302" y="12.4968" size="0.8128" layer="27" font="vector" ratio="15" align="top-center"/>
 </element>

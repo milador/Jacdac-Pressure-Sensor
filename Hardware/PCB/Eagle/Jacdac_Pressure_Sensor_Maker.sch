@@ -24763,7 +24763,7 @@ body</text>
 <part name="U2" library="milador_SMD" library_urn="urn:adsk.eagle:library:27847482" deviceset="STM32F042F6P6" device="" package3d_urn="urn:adsk.eagle:package:30688531/2"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="+3V5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="C5" library="milador_SMD" library_urn="urn:adsk.eagle:library:27847482" deviceset="CAP_CERAMIC-" device="0805-MP" package3d_urn="urn:adsk.eagle:package:27847629/3" value="33pF"/>
+<part name="C5" library="milador_SMD" library_urn="urn:adsk.eagle:library:27847482" deviceset="CAP_CERAMIC-" device="0805-MP" package3d_urn="urn:adsk.eagle:package:27847629/3" value="1uF"/>
 <part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
@@ -24993,9 +24993,9 @@ body</text>
 <attribute name="VALUE" x="152.4874" y="127.5268" size="2.0828" layer="96" ratio="6" rot="SR90"/>
 </instance>
 <instance part="U$3" gate="G$1" x="304.8" y="73.4822" smashed="yes"/>
-<instance part="J1" gate="G$1" x="56.642" y="149.606" smashed="yes">
-<attribute name="VALUE" x="46.482" y="134.366" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="46.482" y="152.146" size="1.778" layer="95" font="vector"/>
+<instance part="J1" gate="G$1" x="56.642" y="149.86" smashed="yes">
+<attribute name="VALUE" x="46.482" y="134.62" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="46.482" y="152.4" size="1.778" layer="95" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -25014,7 +25014,7 @@ body</text>
 <wire x1="124.46" y1="213.36" x2="124.46" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="61.722" y1="144.526" x2="111.76" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="61.722" y1="144.78" x2="111.76" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="144.78" x2="111.76" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="116.84" x2="124.46" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -25091,7 +25091,7 @@ body</text>
 <net name="VCC" class="0">
 <segment>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="61.722" y1="147.066" x2="124.46" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="61.722" y1="147.32" x2="124.46" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="147.32" x2="129.54" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="147.32" x2="129.54" y2="157.48" width="0.1524" layer="91"/>
 <junction x="124.46" y="147.32"/>
@@ -25444,7 +25444,7 @@ body</text>
 </net>
 <net name="J_DATA" class="0">
 <segment>
-<wire x1="61.722" y1="141.986" x2="147.066" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="61.722" y1="142.24" x2="147.066" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="FB1" gate="G$1" pin="2"/>
 <wire x1="147.066" y1="142.24" x2="160.02" y2="142.24" width="0.1524" layer="91"/>
 <junction x="147.066" y="142.24"/>

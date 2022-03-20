@@ -17263,7 +17263,7 @@ body</text>
 <part name="U2" library="milador_SMD" library_urn="urn:adsk.eagle:library:27847482" deviceset="STM32F042F6P6" device="" package3d_urn="urn:adsk.eagle:package:30688531/2"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="+3V5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="C5" library="milador_SMD" library_urn="urn:adsk.eagle:library:27847482" deviceset="CAP_CERAMIC-" device="0603" package3d_urn="urn:adsk.eagle:package:29222124/2" value="33pF"/>
+<part name="C5" library="milador_SMD" library_urn="urn:adsk.eagle:library:27847482" deviceset="CAP_CERAMIC-" device="0603" package3d_urn="urn:adsk.eagle:package:29222124/2" value="1uF"/>
 <part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
