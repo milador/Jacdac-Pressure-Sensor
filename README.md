@@ -4,12 +4,12 @@ A <a href="https://microsoft.github.io/jacdac-docs/">Jacdac</a> Pressure Sensor 
 ## Top View: 
 
 <p align="center">
-<img align="center" src="./Resources/Jacdac_Pressure_Sensor_Top_V1.0.png" width="50%" height="50%" alt="Jacdac-Pressure-Sensor Top"/>
+<img align="center" src="./Resources/Jacdac_Pressure_Sensor_Top_V1.1.png" width="50%" height="50%" alt="Jacdac-Pressure-Sensor Top"/>
 </p>
 
 
 ## Bottom View:
 
 <p align="center">
-<img align="center" src="./Resources/Jacdac_Pressure_Sensor_Bottom_V1.0.png" width="50%" height="50%" alt="Jacdac-Pressure-Sensor Bottom"/>
+<img align="center" src="./Resources/Jacdac_Pressure_Sensor_Bottom_V1.1.png" width="50%" height="50%" alt="Jacdac-Pressure-Sensor Bottom"/>
 </p>
