@@ -27149,10 +27149,10 @@ DIN A4, landscape with location and doc. field</description>
 <part name="J4" library="milador" library_urn="urn:adsk.eagle:library:12595918" deviceset="JACDAC-M3" device="-GND" package3d_urn="urn:adsk.eagle:package:36287306/1" value="GND"/>
 <part name="R1" library="milador_SMD" library_urn="urn:adsk.eagle:library:27847482" deviceset="RESISTOR-" device="0402" package3d_urn="urn:adsk.eagle:package:36491935/2" value="10k"/>
 <part name="R2" library="milador_SMD" library_urn="urn:adsk.eagle:library:27847482" deviceset="RESISTOR-" device="0402" package3d_urn="urn:adsk.eagle:package:36491935/2" value="10k"/>
-<part name="C1" library="milador_SMD" library_urn="urn:adsk.eagle:library:27847482" deviceset="CAP_CERAMIC-" device="0402" package3d_urn="urn:adsk.eagle:package:36491935/2" value="0.1uF"/>
+<part name="C1" library="milador_SMD" library_urn="urn:adsk.eagle:library:27847482" deviceset="CAP_CERAMIC-" device="0402" package3d_urn="urn:adsk.eagle:package:36491935/2" value="100nF"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+11" library="milador" library_urn="urn:adsk.eagle:library:12595918" deviceset="VCC" device=""/>
-<part name="C4" library="milador_SMD" library_urn="urn:adsk.eagle:library:27847482" deviceset="CAP_CERAMIC-" device="0402" package3d_urn="urn:adsk.eagle:package:36491935/2" value="0.1uF"/>
+<part name="C4" library="milador_SMD" library_urn="urn:adsk.eagle:library:27847482" deviceset="CAP_CERAMIC-" device="0402" package3d_urn="urn:adsk.eagle:package:36491935/2" value="100nF"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+12" library="milador" library_urn="urn:adsk.eagle:library:12595918" deviceset="VCC" device=""/>
 <part name="IC1" library="milador_SMD" library_urn="urn:adsk.eagle:library:27847482" deviceset="LPS33HWTR" device="" package3d_urn="urn:adsk.eagle:package:30688697/5"/>
