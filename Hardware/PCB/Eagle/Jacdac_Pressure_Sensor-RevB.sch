@@ -27164,6 +27164,7 @@ DIN A4, landscape with location and doc. field</description>
 <part name="LABEL_QRCODE" library="milador" library_urn="urn:adsk.eagle:library:12595918" deviceset="MILADOR-QR-CODE-" device="JACDAC-GITHUB-PS" package3d_urn="urn:adsk.eagle:package:36433227/2"/>
 <part name="LABEL_LOGO2" library="MMC Eagle" library_urn="urn:adsk.eagle:library:13126479" deviceset="MMC_LOGO-" device="XSM" package3d_urn="urn:adsk.eagle:package:36433256/2"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
+<part name="P+3" library="milador" library_urn="urn:adsk.eagle:library:12595918" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -27345,6 +27346,9 @@ DIN A4, landscape with location and doc. field</description>
 <attribute name="LAST_DATE_TIME" x="54.61" y="-45.72" size="2.286" layer="94"/>
 <attribute name="SHEET" x="67.945" y="-50.8" size="2.54" layer="94"/>
 </instance>
+<instance part="P+3" gate="VCC" x="12.7" y="50.8" smashed="yes">
+<attribute name="VALUE" x="15.24" y="50.8" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -27489,6 +27493,12 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="58.42" y1="50.8" x2="66.04" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="50.8" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
 <junction x="66.04" y="50.8"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="CS"/>
+<pinref part="P+3" gate="VCC" pin="VCC"/>
+<wire x1="17.78" y1="45.72" x2="12.7" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="45.72" x2="12.7" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
