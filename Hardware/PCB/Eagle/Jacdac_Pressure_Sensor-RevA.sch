@@ -34852,6 +34852,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="D1" library="milador_SMD" library_urn="urn:adsk.eagle:library:27847482" deviceset="DIODE-ZENER-AA-" device="RCLAMP0521PATCT" package3d_urn="urn:adsk.eagle:package:30689290/6"/>
 <part name="D2" library="milador_SMD" library_urn="urn:adsk.eagle:library:27847482" deviceset="DIODE-ZENER-AA-" device="RCLAMP0521PATCT" package3d_urn="urn:adsk.eagle:package:30689290/6"/>
 <part name="LABEL_QR_CODE" library="milador" library_urn="urn:adsk.eagle:library:12595918" deviceset="MILADOR-QR-CODE-" device="JACDAC-GITHUB-PS" package3d_urn="urn:adsk.eagle:package:36433227/1"/>
+<part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -35071,6 +35072,9 @@ DIN A3, landscape with location and doc. field</description>
 <attribute name="VALUE" x="84.4154" y="126.9426" size="2.0828" layer="96" ratio="6" rot="SR90"/>
 </instance>
 <instance part="LABEL_QR_CODE" gate="G$1" x="312.42" y="75.438" smashed="yes"/>
+<instance part="+3V7" gate="G$1" x="12.192" y="60.198" smashed="yes">
+<attribute name="VALUE" x="9.652" y="55.118" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -35323,6 +35327,12 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
 <wire x1="88.9" y1="47.752" x2="88.9" y2="63.292" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="CS"/>
+<pinref part="+3V7" gate="G$1" pin="+3V3"/>
+<wire x1="20.574" y1="50.038" x2="12.192" y2="50.038" width="0.1524" layer="91"/>
+<wire x1="12.192" y1="50.038" x2="12.192" y2="57.658" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RESET" class="0">

@@ -34737,6 +34737,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="P+4" library="milador" library_urn="urn:adsk.eagle:library:12595918" deviceset="JD5V" device=""/>
 <part name="GND14" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="LABEL_QR_CODE" library="milador" library_urn="urn:adsk.eagle:library:12595918" deviceset="MILADOR-QR-CODE-" device="JACDAC-GITHUB-PS" package3d_urn="urn:adsk.eagle:package:36433227/1"/>
+<part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -34942,6 +34943,9 @@ DIN A3, landscape with location and doc. field</description>
 <attribute name="VALUE" x="224.79" y="151.638" size="1.778" layer="96" font="vector" rot="MR270" align="top-center"/>
 </instance>
 <instance part="LABEL_QR_CODE" gate="G$1" x="312.42" y="75.438" smashed="yes"/>
+<instance part="+3V7" gate="G$1" x="13.208" y="60.452" smashed="yes">
+<attribute name="VALUE" x="10.668" y="55.372" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -35176,6 +35180,12 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
 <wire x1="88.9" y1="47.752" x2="88.9" y2="63.292" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="CS"/>
+<pinref part="+3V7" gate="G$1" pin="+3V3"/>
+<wire x1="20.574" y1="50.038" x2="13.208" y2="50.038" width="0.1524" layer="91"/>
+<wire x1="13.208" y1="50.038" x2="13.208" y2="57.912" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RESET" class="0">
