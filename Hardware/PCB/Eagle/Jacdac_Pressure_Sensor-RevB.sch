@@ -27107,6 +27107,7 @@ DIN A4, landscape with location and doc. field</description>
 <schematic_group name="PRESSURE-SENSOR"/>
 <schematic_group name="STATUS_LED"/>
 <schematic_group name="VISUAL"/>
+<schematic_group name="PULL-UPS"/>
 </groups>
 <parts>
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -27165,6 +27166,8 @@ DIN A4, landscape with location and doc. field</description>
 <part name="LABEL_LOGO2" library="MMC Eagle" library_urn="urn:adsk.eagle:library:13126479" deviceset="MMC_LOGO-" device="XSM" package3d_urn="urn:adsk.eagle:package:36433256/2"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="P+3" library="milador" library_urn="urn:adsk.eagle:library:12595918" deviceset="VCC" device=""/>
+<part name="R4" library="milador_SMD" library_urn="urn:adsk.eagle:library:27847482" deviceset="RESISTOR-" device="0402" package3d_urn="urn:adsk.eagle:package:36491935/2" value="10k"/>
+<part name="P+6" library="milador" library_urn="urn:adsk.eagle:library:12595918" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -27217,11 +27220,11 @@ DIN A4, landscape with location and doc. field</description>
 <attribute name="VALUE" x="-101.6" y="73.66" size="1.778" layer="96"/>
 </instance>
 <instance part="J5" gate="G$1" x="-53.34" y="-7.62" smashed="yes" rot="R180" grouprefs="DEBUG"/>
-<instance part="GND16" gate="1" x="-35.56" y="83.82" smashed="yes" rot="R270" grouprefs="JACDAC">
-<attribute name="VALUE" x="-38.1" y="86.36" size="1.778" layer="96" rot="R270"/>
+<instance part="GND16" gate="1" x="-43.18" y="83.82" smashed="yes" rot="R270" grouprefs="JACDAC">
+<attribute name="VALUE" x="-45.72" y="86.36" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="U$1" gate="G$1" x="-35.56" y="76.2" smashed="yes" rot="R90" grouprefs="JACDAC">
-<attribute name="VALUE" x="-36.576" y="74.676" size="1.27" layer="96" rot="R90"/>
+<instance part="U$1" gate="G$1" x="-43.18" y="76.2" smashed="yes" rot="R90" grouprefs="JACDAC">
+<attribute name="VALUE" x="-44.196" y="74.676" size="1.27" layer="96" rot="R90"/>
 </instance>
 <instance part="U$3" gate="G$1" x="-132.08" y="96.52" smashed="yes" grouprefs="LDO">
 <attribute name="VALUE" x="-133.604" y="97.536" size="1.27" layer="96"/>
@@ -27237,14 +27240,14 @@ DIN A4, landscape with location and doc. field</description>
 <attribute name="NAME" x="-105.41" y="-6.1214" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="-102.87" y="-10.922" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="GND7" gate="1" x="43.18" y="83.82" smashed="yes" rot="R270" grouprefs="HOLES">
-<attribute name="VALUE" x="40.64" y="86.36" size="1.778" layer="96" rot="R270"/>
+<instance part="GND7" gate="1" x="58.42" y="83.82" smashed="yes" rot="R270" grouprefs="HOLES">
+<attribute name="VALUE" x="55.88" y="86.36" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="U$2" gate="G$1" x="40.64" y="91.44" smashed="yes" rot="R90" grouprefs="HOLES">
-<attribute name="VALUE" x="39.624" y="89.916" size="1.27" layer="96" rot="R90"/>
+<instance part="U$2" gate="G$1" x="55.88" y="91.44" smashed="yes" rot="R90" grouprefs="HOLES">
+<attribute name="VALUE" x="54.864" y="89.916" size="1.27" layer="96" rot="R90"/>
 </instance>
-<instance part="JD1" gate="G$1" x="-22.86" y="86.36" smashed="yes" rot="MR0" grouprefs="JACDAC">
-<attribute name="NAME" x="-20.32" y="95.25" size="1.778" layer="95" font="vector" rot="MR0" align="bottom-center"/>
+<instance part="JD1" gate="G$1" x="-30.48" y="86.36" smashed="yes" rot="MR0" grouprefs="JACDAC">
+<attribute name="NAME" x="-27.94" y="95.25" size="1.778" layer="95" font="vector" rot="MR0" align="bottom-center"/>
 </instance>
 <instance part="R8" gate="G$1" x="-101.6" y="0" smashed="yes" rot="R180" grouprefs="STATUS_LED">
 <attribute name="NAME" x="-107.95" y="1.4986" size="1.778" layer="95"/>
@@ -27271,64 +27274,64 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="GND3" gate="1" x="-129.54" y="27.94" smashed="yes" grouprefs="MCU">
 <attribute name="VALUE" x="-132.08" y="25.4" size="1.778" layer="96"/>
 </instance>
-<instance part="P+2" gate="VCC" x="-27.94" y="58.42" smashed="yes" grouprefs="MCU">
-<attribute name="VALUE" x="-30.48" y="55.88" size="1.778" layer="96" rot="R90"/>
+<instance part="P+2" gate="VCC" x="-33.02" y="58.42" smashed="yes" grouprefs="MCU">
+<attribute name="VALUE" x="-35.56" y="55.88" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND4" gate="1" x="43.18" y="76.2" smashed="yes" rot="R270" grouprefs="HOLES">
-<attribute name="VALUE" x="40.64" y="78.74" size="1.778" layer="96" rot="R270"/>
+<instance part="GND4" gate="1" x="58.42" y="76.2" smashed="yes" rot="R270" grouprefs="HOLES">
+<attribute name="VALUE" x="55.88" y="78.74" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND10" gate="1" x="2.54" y="83.82" smashed="yes" rot="R270" grouprefs="JACDAC-2">
-<attribute name="VALUE" x="0" y="86.36" size="1.778" layer="96" rot="R270"/>
+<instance part="GND10" gate="1" x="-5.08" y="83.82" smashed="yes" rot="R270" grouprefs="JACDAC-2">
+<attribute name="VALUE" x="-7.62" y="86.36" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="U$4" gate="G$1" x="2.54" y="76.2" smashed="yes" rot="R90" grouprefs="JACDAC-2">
-<attribute name="VALUE" x="1.524" y="74.676" size="1.27" layer="96" rot="R90"/>
+<instance part="U$4" gate="G$1" x="-5.08" y="76.2" smashed="yes" rot="R90" grouprefs="JACDAC-2">
+<attribute name="VALUE" x="-6.096" y="74.676" size="1.27" layer="96" rot="R90"/>
 </instance>
-<instance part="JD2" gate="G$1" x="15.24" y="86.36" smashed="yes" rot="MR0" grouprefs="JACDAC-2">
-<attribute name="NAME" x="17.78" y="95.25" size="1.778" layer="95" font="vector" rot="MR0" align="bottom-center"/>
+<instance part="JD2" gate="G$1" x="7.62" y="86.36" smashed="yes" rot="MR0" grouprefs="JACDAC-2">
+<attribute name="NAME" x="10.16" y="95.25" size="1.778" layer="95" font="vector" rot="MR0" align="bottom-center"/>
 </instance>
-<instance part="J1" gate="JH" x="50.8" y="99.06" smashed="yes" grouprefs="HOLES">
-<attribute name="VALUE" x="48.26" y="100.838" size="1.778" layer="95" font="vector"/>
+<instance part="J1" gate="JH" x="66.04" y="99.06" smashed="yes" grouprefs="HOLES">
+<attribute name="VALUE" x="63.5" y="100.838" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="J2" gate="JH" x="50.8" y="91.44" smashed="yes" grouprefs="HOLES">
-<attribute name="VALUE" x="48.26" y="93.218" size="1.778" layer="95" font="vector"/>
+<instance part="J2" gate="JH" x="66.04" y="91.44" smashed="yes" grouprefs="HOLES">
+<attribute name="VALUE" x="63.5" y="93.218" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="J3" gate="JH" x="50.8" y="83.82" smashed="yes" grouprefs="HOLES">
-<attribute name="VALUE" x="48.26" y="85.598" size="1.778" layer="95" font="vector"/>
+<instance part="J3" gate="JH" x="66.04" y="83.82" smashed="yes" grouprefs="HOLES">
+<attribute name="VALUE" x="63.5" y="85.598" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="J4" gate="JH" x="50.8" y="76.2" smashed="yes" grouprefs="HOLES">
-<attribute name="VALUE" x="48.26" y="77.978" size="1.778" layer="95" font="vector"/>
+<instance part="J4" gate="JH" x="66.04" y="76.2" smashed="yes" grouprefs="HOLES">
+<attribute name="VALUE" x="63.5" y="77.978" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="R1" gate="G$1" x="-27.94" y="43.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="-29.4386" y="44.45" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-24.638" y="41.91" size="1.778" layer="96" rot="R90"/>
+<instance part="R1" gate="G$1" x="-33.02" y="43.18" smashed="yes" rot="R90">
+<attribute name="NAME" x="-34.5186" y="44.45" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-29.718" y="41.91" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R2" gate="G$1" x="-20.32" y="43.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="-21.8186" y="44.45" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-17.018" y="41.91" size="1.778" layer="96" rot="R90"/>
+<instance part="R2" gate="G$1" x="-25.4" y="43.18" smashed="yes" rot="R90">
+<attribute name="NAME" x="-26.8986" y="44.45" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-22.098" y="41.91" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C1" gate="G$1" x="-7.62" y="40.64" smashed="yes" grouprefs="PRESSURE-SENSOR">
-<attribute name="NAME" x="-6.096" y="46.101" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-2.921" y="37.084" size="1.778" layer="96" rot="R90"/>
+<instance part="C1" gate="G$1" x="-12.7" y="38.1" smashed="yes" grouprefs="PRESSURE-SENSOR">
+<attribute name="NAME" x="-11.176" y="43.561" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-8.001" y="34.544" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND6" gate="1" x="-7.62" y="33.02" smashed="yes" grouprefs="PRESSURE-SENSOR">
-<attribute name="VALUE" x="-10.16" y="30.48" size="1.778" layer="96"/>
+<instance part="GND6" gate="1" x="-12.7" y="30.48" smashed="yes" grouprefs="PRESSURE-SENSOR">
+<attribute name="VALUE" x="-15.24" y="27.94" size="1.778" layer="96"/>
 </instance>
-<instance part="P+11" gate="VCC" x="-7.62" y="53.34" smashed="yes" grouprefs="PRESSURE-SENSOR">
-<attribute name="VALUE" x="-5.08" y="53.34" size="1.778" layer="96" rot="R90"/>
+<instance part="P+11" gate="VCC" x="-12.7" y="50.8" smashed="yes" grouprefs="PRESSURE-SENSOR">
+<attribute name="VALUE" x="-10.16" y="50.8" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C4" gate="G$1" x="2.54" y="40.64" smashed="yes" grouprefs="PRESSURE-SENSOR">
-<attribute name="NAME" x="4.064" y="46.101" size="1.778" layer="95"/>
-<attribute name="VALUE" x="7.239" y="37.084" size="1.778" layer="96" rot="R90"/>
+<instance part="C4" gate="G$1" x="-2.54" y="38.1" smashed="yes" grouprefs="PRESSURE-SENSOR">
+<attribute name="NAME" x="-1.016" y="43.561" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-0.381" y="34.544" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND9" gate="1" x="2.54" y="33.02" smashed="yes" grouprefs="PRESSURE-SENSOR">
-<attribute name="VALUE" x="0" y="30.48" size="1.778" layer="96"/>
+<instance part="GND9" gate="1" x="-2.54" y="30.48" smashed="yes" grouprefs="PRESSURE-SENSOR">
+<attribute name="VALUE" x="-5.08" y="27.94" size="1.778" layer="96"/>
 </instance>
-<instance part="P+12" gate="VCC" x="2.54" y="53.34" smashed="yes" grouprefs="PRESSURE-SENSOR">
-<attribute name="VALUE" x="5.08" y="53.34" size="1.778" layer="96" rot="R90"/>
+<instance part="P+12" gate="VCC" x="-2.54" y="50.8" smashed="yes" grouprefs="PRESSURE-SENSOR">
+<attribute name="VALUE" x="0" y="50.8" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="IC1" gate="G$1" x="38.1" y="38.1" smashed="yes" grouprefs="PRESSURE-SENSOR">
-<attribute name="NAME" x="22.8506" y="53.8578" size="2.54158125" layer="95"/>
-<attribute name="VALUE" x="22.841" y="22.3323" size="2.54316875" layer="96"/>
+<instance part="IC1" gate="G$1" x="40.64" y="38.1" smashed="yes" grouprefs="PRESSURE-SENSOR">
+<attribute name="NAME" x="25.3906" y="53.8578" size="2.54158125" layer="95"/>
+<attribute name="VALUE" x="25.381" y="22.3323" size="2.54316875" layer="96"/>
 </instance>
 <instance part="P+13" gate="VCC" x="66.04" y="55.88" smashed="yes" grouprefs="PRESSURE-SENSOR">
 <attribute name="VALUE" x="68.58" y="55.88" size="1.778" layer="96" rot="R90"/>
@@ -27348,6 +27351,13 @@ DIN A4, landscape with location and doc. field</description>
 </instance>
 <instance part="P+3" gate="VCC" x="12.7" y="50.8" smashed="yes">
 <attribute name="VALUE" x="15.24" y="50.8" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R4" gate="G$1" x="35.56" y="83.82" smashed="yes" rot="R90" grouprefs="PULL-UPS">
+<attribute name="NAME" x="34.0614" y="85.09" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="38.862" y="82.55" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+6" gate="VCC" x="35.56" y="93.98" smashed="yes" grouprefs="PULL-UPS">
+<attribute name="VALUE" x="38.1" y="93.98" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -27381,13 +27391,13 @@ DIN A4, landscape with location and doc. field</description>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="45.72" y1="83.82" x2="48.26" y2="83.82" width="0.1524" layer="91" grouprefs="HOLES"/>
+<wire x1="60.96" y1="83.82" x2="63.5" y2="83.82" width="0.1524" layer="91" grouprefs="HOLES"/>
 <pinref part="J3" gate="JH" pin="P$1"/>
 </segment>
 <segment>
 <pinref part="JD1" gate="G$1" pin="1"/>
 <pinref part="GND16" gate="1" pin="GND"/>
-<wire x1="-33.02" y1="83.82" x2="-30.48" y2="83.82" width="0.1524" layer="91" grouprefs="JACDAC"/>
+<wire x1="-40.64" y1="83.82" x2="-38.1" y2="83.82" width="0.1524" layer="91" grouprefs="JACDAC"/>
 </segment>
 <segment>
 <wire x1="-127" y1="35.56" x2="-114.3" y2="35.56" width="0.1524" layer="91" grouprefs="MCU"/>
@@ -27399,35 +27409,35 @@ DIN A4, landscape with location and doc. field</description>
 </segment>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="45.72" y1="76.2" x2="48.26" y2="76.2" width="0.1524" layer="91" grouprefs="HOLES"/>
+<wire x1="60.96" y1="76.2" x2="63.5" y2="76.2" width="0.1524" layer="91" grouprefs="HOLES"/>
 <pinref part="J4" gate="JH" pin="P$1"/>
 </segment>
 <segment>
 <pinref part="JD2" gate="G$1" pin="1"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="5.08" y1="83.82" x2="7.62" y2="83.82" width="0.1524" layer="91" grouprefs="JACDAC-2"/>
+<wire x1="-2.54" y1="83.82" x2="0" y2="83.82" width="0.1524" layer="91" grouprefs="JACDAC-2"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="-7.62" y1="35.56" x2="-7.62" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="33.02" x2="-12.7" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="2.54" y1="35.56" x2="2.54" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="33.02" x2="-2.54" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="EXP_GND"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="58.42" y1="27.94" x2="63.5" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="27.94" x2="63.5" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="27.94" x2="63.5" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="GND"/>
-<wire x1="58.42" y1="30.48" x2="63.5" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="30.48" x2="63.5" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="30.48" x2="63.5" y2="27.94" width="0.1524" layer="91"/>
 <junction x="63.5" y="27.94"/>
 <pinref part="IC1" gate="G$1" pin="RES"/>
-<wire x1="58.42" y1="35.56" x2="63.5" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="35.56" x2="63.5" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="35.56" x2="63.5" y2="30.48" width="0.1524" layer="91"/>
 <junction x="63.5" y="30.48"/>
 </segment>
@@ -27464,21 +27474,21 @@ DIN A4, landscape with location and doc. field</description>
 </segment>
 <segment>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
-<wire x1="-27.94" y1="48.26" x2="-27.94" y2="55.88" width="0.1524" layer="91" grouprefs="MCU"/>
-<wire x1="-27.94" y1="48.26" x2="-20.32" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="48.26" x2="-33.02" y2="55.88" width="0.1524" layer="91" grouprefs="MCU"/>
+<wire x1="-33.02" y1="48.26" x2="-25.4" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<junction x="-27.94" y="48.26"/>
+<junction x="-33.02" y="48.26"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="P+11" gate="VCC" pin="VCC"/>
-<wire x1="-7.62" y1="50.8" x2="-7.62" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="48.26" x2="-12.7" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="P+12" gate="VCC" pin="VCC"/>
-<wire x1="2.54" y1="50.8" x2="2.54" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="48.26" x2="-2.54" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="D1" gate="G$1" pin="VCC"/>
@@ -27487,18 +27497,23 @@ DIN A4, landscape with location and doc. field</description>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VDD_IO"/>
 <pinref part="P+13" gate="VCC" pin="VCC"/>
-<wire x1="58.42" y1="48.26" x2="66.04" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="48.26" x2="66.04" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="48.26" x2="66.04" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="VDD"/>
-<wire x1="58.42" y1="50.8" x2="66.04" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="50.8" x2="66.04" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="50.8" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
 <junction x="66.04" y="50.8"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="CS"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
-<wire x1="17.78" y1="45.72" x2="12.7" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="45.72" x2="12.7" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="45.72" x2="12.7" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="P+6" gate="VCC" pin="VCC"/>
+<wire x1="35.56" y1="88.9" x2="35.56" y2="91.44" width="0.1524" layer="91" grouprefs="PULL-UPS"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
@@ -27508,7 +27523,7 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="J5" gate="G$1" pin="SWDIO"/>
 </segment>
 <segment>
-<wire x1="-48.26" y1="40.64" x2="-33.02" y2="40.64" width="0.1524" layer="91" grouprefs="MCU"/>
+<wire x1="-48.26" y1="40.64" x2="-38.1" y2="40.64" width="0.1524" layer="91" grouprefs="MCU"/>
 <label x="-45.72" y="40.64" size="1.778" layer="95" grouprefs="MCU"/>
 <pinref part="IC2" gate="IC0" pin="PA13"/>
 </segment>
@@ -27520,7 +27535,7 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="J5" gate="G$1" pin="SWCLK"/>
 </segment>
 <segment>
-<wire x1="-48.26" y1="43.18" x2="-33.02" y2="43.18" width="0.1524" layer="91" grouprefs="MCU"/>
+<wire x1="-48.26" y1="43.18" x2="-38.1" y2="43.18" width="0.1524" layer="91" grouprefs="MCU"/>
 <label x="-45.72" y="43.18" size="1.778" layer="95" grouprefs="MCU"/>
 <pinref part="IC2" gate="IC0" pin="PA15/14"/>
 </segment>
@@ -27568,25 +27583,25 @@ DIN A4, landscape with location and doc. field</description>
 <net name="JDF" class="0">
 <segment>
 <pinref part="FB1" gate="G$1" pin="2"/>
-<label x="-33.02" y="93.98" size="1.778" layer="95" rot="R180" grouprefs="JACDAC"/>
-<wire x1="-45.72" y1="91.44" x2="-30.48" y2="91.44" width="0.1524" layer="91" grouprefs="JACDAC"/>
+<label x="-40.64" y="93.98" size="1.778" layer="95" rot="R180" grouprefs="JACDAC"/>
+<wire x1="-45.72" y1="91.44" x2="-38.1" y2="91.44" width="0.1524" layer="91" grouprefs="JACDAC"/>
 <pinref part="JD1" gate="G$1" pin="2"/>
 <pinref part="JD1" gate="G$1" pin="6"/>
-<wire x1="-30.48" y1="88.9" x2="-30.48" y2="91.44" width="0.1524" layer="91" grouprefs="JACDAC"/>
-<junction x="-30.48" y="91.44" grouprefs="JACDAC"/>
+<wire x1="-38.1" y1="88.9" x2="-38.1" y2="91.44" width="0.1524" layer="91" grouprefs="JACDAC"/>
+<junction x="-38.1" y="91.44" grouprefs="JACDAC"/>
 </segment>
 <segment>
-<wire x1="38.1" y1="99.06" x2="48.26" y2="99.06" width="0.1524" layer="91" grouprefs="HOLES"/>
-<label x="38.1" y="99.06" size="1.778" layer="95" grouprefs="HOLES"/>
+<wire x1="53.34" y1="99.06" x2="63.5" y2="99.06" width="0.1524" layer="91" grouprefs="HOLES"/>
+<label x="53.34" y="99.06" size="1.778" layer="95" grouprefs="HOLES"/>
 <pinref part="J1" gate="JH" pin="P$1"/>
 </segment>
 <segment>
-<label x="5.08" y="93.98" size="1.778" layer="95" rot="R180" grouprefs="JACDAC-2"/>
-<wire x1="-2.54" y1="91.44" x2="7.62" y2="91.44" width="0.1524" layer="91" grouprefs="JACDAC-2"/>
+<label x="-2.54" y="93.98" size="1.778" layer="95" rot="R180" grouprefs="JACDAC-2"/>
+<wire x1="-10.16" y1="91.44" x2="0" y2="91.44" width="0.1524" layer="91" grouprefs="JACDAC-2"/>
 <pinref part="JD2" gate="G$1" pin="2"/>
 <pinref part="JD2" gate="G$1" pin="6"/>
-<wire x1="7.62" y1="88.9" x2="7.62" y2="91.44" width="0.1524" layer="91" grouprefs="JACDAC-2"/>
-<junction x="7.62" y="91.44" grouprefs="JACDAC-2"/>
+<wire x1="0" y1="88.9" x2="0" y2="91.44" width="0.1524" layer="91" grouprefs="JACDAC-2"/>
+<junction x="0" y="91.44" grouprefs="JACDAC-2"/>
 </segment>
 </net>
 <net name="JD5V" class="3">
@@ -27601,24 +27616,24 @@ DIN A4, landscape with location and doc. field</description>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="JD5V"/>
-<wire x1="43.18" y1="91.44" x2="48.26" y2="91.44" width="0.1524" layer="91" grouprefs="HOLES"/>
+<wire x1="58.42" y1="91.44" x2="63.5" y2="91.44" width="0.1524" layer="91" grouprefs="HOLES"/>
 <pinref part="J2" gate="JH" pin="P$1"/>
 </segment>
 <segment>
 <pinref part="JD1" gate="G$1" pin="3"/>
 <pinref part="U$1" gate="G$1" pin="JD5V"/>
-<wire x1="-33.02" y1="76.2" x2="-30.48" y2="76.2" width="0.1524" layer="91" grouprefs="JACDAC"/>
+<wire x1="-40.64" y1="76.2" x2="-38.1" y2="76.2" width="0.1524" layer="91" grouprefs="JACDAC"/>
 <pinref part="JD1" gate="G$1" pin="4"/>
-<wire x1="-30.48" y1="78.74" x2="-30.48" y2="76.2" width="0.1524" layer="91" grouprefs="JACDAC"/>
-<junction x="-30.48" y="76.2" grouprefs="JACDAC"/>
+<wire x1="-38.1" y1="78.74" x2="-38.1" y2="76.2" width="0.1524" layer="91" grouprefs="JACDAC"/>
+<junction x="-38.1" y="76.2" grouprefs="JACDAC"/>
 </segment>
 <segment>
 <pinref part="JD2" gate="G$1" pin="3"/>
 <pinref part="U$4" gate="G$1" pin="JD5V"/>
-<wire x1="5.08" y1="76.2" x2="7.62" y2="76.2" width="0.1524" layer="91" grouprefs="JACDAC-2"/>
+<wire x1="-2.54" y1="76.2" x2="0" y2="76.2" width="0.1524" layer="91" grouprefs="JACDAC-2"/>
 <pinref part="JD2" gate="G$1" pin="4"/>
-<wire x1="7.62" y1="78.74" x2="7.62" y2="76.2" width="0.1524" layer="91" grouprefs="JACDAC-2"/>
-<junction x="7.62" y="76.2" grouprefs="JACDAC-2"/>
+<wire x1="0" y1="78.74" x2="0" y2="76.2" width="0.1524" layer="91" grouprefs="JACDAC-2"/>
+<junction x="0" y="76.2" grouprefs="JACDAC-2"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -27651,7 +27666,7 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="R8" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="-48.26" y1="33.02" x2="-33.02" y2="33.02" width="0.1524" layer="91" grouprefs="MCU"/>
+<wire x1="-48.26" y1="33.02" x2="-38.1" y2="33.02" width="0.1524" layer="91" grouprefs="MCU"/>
 <label x="-45.72" y="33.02" size="1.778" layer="95" grouprefs="MCU"/>
 <pinref part="IC2" gate="IC0" pin="PB0/1/2/PA8"/>
 </segment>
@@ -27675,7 +27690,7 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="R5" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="-48.26" y1="30.48" x2="-33.02" y2="30.48" width="0.1524" layer="91" grouprefs="MCU"/>
+<wire x1="-48.26" y1="30.48" x2="-38.1" y2="30.48" width="0.1524" layer="91" grouprefs="MCU"/>
 <label x="-45.72" y="30.48" size="1.778" layer="95" grouprefs="MCU"/>
 <pinref part="IC2" gate="IC0" pin="PA7"/>
 </segment>
@@ -27689,34 +27704,34 @@ DIN A4, landscape with location and doc. field</description>
 </net>
 <net name="SDA" class="0">
 <segment>
-<wire x1="-48.26" y1="38.1" x2="-27.94" y2="38.1" width="0.1524" layer="91" grouprefs="MCU"/>
+<wire x1="-48.26" y1="38.1" x2="-33.02" y2="38.1" width="0.1524" layer="91" grouprefs="MCU"/>
 <label x="-45.72" y="38.1" size="1.778" layer="95" grouprefs="MCU"/>
 <pinref part="IC2" gate="IC0" pin="PA12[10]"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="SDA/SDI/SDO"/>
-<wire x1="17.78" y1="38.1" x2="10.16" y2="38.1" width="0.1524" layer="91"/>
-<label x="10.16" y="38.1" size="1.778" layer="95"/>
+<wire x1="20.32" y1="38.1" x2="12.7" y2="38.1" width="0.1524" layer="91"/>
+<label x="12.7" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL" class="0">
 <segment>
-<wire x1="-48.26" y1="35.56" x2="-20.32" y2="35.56" width="0.1524" layer="91" grouprefs="MCU"/>
+<wire x1="-48.26" y1="35.56" x2="-25.4" y2="35.56" width="0.1524" layer="91" grouprefs="MCU"/>
 <label x="-45.72" y="35.56" size="1.778" layer="95" grouprefs="MCU"/>
 <pinref part="IC2" gate="IC0" pin="PA11[9]"/>
-<wire x1="-20.32" y1="35.56" x2="-20.32" y2="38.1" width="0.1524" layer="91" grouprefs="MCU"/>
+<wire x1="-25.4" y1="35.56" x2="-25.4" y2="38.1" width="0.1524" layer="91" grouprefs="MCU"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="SCL/SPC"/>
-<wire x1="17.78" y1="43.18" x2="10.16" y2="43.18" width="0.1524" layer="91"/>
-<label x="10.16" y="43.18" size="1.778" layer="95"/>
+<wire x1="20.32" y1="43.18" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
+<label x="12.7" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM" class="0">
 <segment>
-<wire x1="-48.26" y1="22.86" x2="-33.02" y2="22.86" width="0.1524" layer="91" grouprefs="MCU"/>
+<wire x1="-48.26" y1="22.86" x2="-38.1" y2="22.86" width="0.1524" layer="91" grouprefs="MCU"/>
 <label x="-45.72" y="22.86" size="1.778" layer="95" grouprefs="MCU"/>
 <pinref part="IC2" gate="IC0" pin="PA4"/>
 </segment>
@@ -27736,8 +27751,8 @@ DIN A4, landscape with location and doc. field</description>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="INT_DRDY"/>
-<wire x1="17.78" y1="40.64" x2="10.16" y2="40.64" width="0.1524" layer="91"/>
-<label x="10.16" y="40.64" size="1.778" layer="95"/>
+<wire x1="20.32" y1="40.64" x2="12.7" y2="40.64" width="0.1524" layer="91"/>
+<label x="12.7" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX/MOSI" class="0">
@@ -27756,9 +27771,21 @@ DIN A4, landscape with location and doc. field</description>
 </net>
 <net name="MISO" class="0">
 <segment>
-<wire x1="-48.26" y1="27.94" x2="-33.02" y2="27.94" width="0.1524" layer="91" grouprefs="MCU"/>
+<wire x1="-48.26" y1="27.94" x2="-38.1" y2="27.94" width="0.1524" layer="91" grouprefs="MCU"/>
 <label x="-45.72" y="27.94" size="1.778" layer="95" grouprefs="MCU"/>
 <pinref part="IC2" gate="IC0" pin="PA6"/>
+</segment>
+</net>
+<net name="SA0" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="SDO/SA0"/>
+<wire x1="60.96" y1="38.1" x2="63.5" y2="38.1" width="0.1524" layer="91"/>
+<label x="58.42" y="38.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="78.74" x2="35.56" y2="73.66" width="0.1524" layer="91" grouprefs="PULL-UPS"/>
+<label x="35.56" y="73.66" size="1.778" layer="95" rot="R90" grouprefs="PULL-UPS"/>
 </segment>
 </net>
 </nets>
@@ -27766,15 +27793,6 @@ DIN A4, landscape with location and doc. field</description>
 </sheets>
 <errors>
 <approved hash="102,1,-99.06,93.98,VOUT,VCC,,,,"/>
-<approved hash="102,1,-30.48,83.82,1,GND,,,,"/>
-<approved hash="102,1,-30.48,76.2,3,JD5V,,,,"/>
-<approved hash="102,1,-30.48,78.74,4,JD5V,,,,"/>
-<approved hash="102,1,7.62,83.82,1,GND,,,,"/>
-<approved hash="102,1,7.62,76.2,3,JD5V,,,,"/>
-<approved hash="102,1,7.62,78.74,4,JD5V,,,,"/>
-<approved hash="104,1,58.42,27.94,IC1,EXP_GND,GND,,,"/>
-<approved hash="104,1,58.42,50.8,IC1,VDD,VCC,,,"/>
-<approved hash="104,1,58.42,48.26,IC1,VDD_IO,VCC,,,"/>
 </errors>
 </schematic>
 </drawing>
