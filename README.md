@@ -5,7 +5,7 @@ A <a href="https://microsoft.github.io/jacdac-docs/">Jacdac</a> Pressure Sensor 
 ## Jacdac Dashboard: 
 
 <p align="center">
-<img align="center" src="./Resources/jacdac-dashboard.png" width="50%" height="50%" alt="Jacdac-Pressure-Sensor dashboard example"/>
+<img align="center" src="./Resources/jacdac-dashboard.PNG" width="50%" height="50%" alt="Jacdac-Pressure-Sensor dashboard example"/>
 </p>
 
 
