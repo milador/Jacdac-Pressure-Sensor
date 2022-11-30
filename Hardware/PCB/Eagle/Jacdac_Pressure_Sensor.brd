@@ -201,7 +201,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYWQxOTI2" projecturn="a.cGVyc29uYWw6dWUyYWQxOTI2IzIwMjEwOTEzNDQzNTc2ODA2" f3durn="urn:adsk.wipprod:dm.lineage:5Ap64JYkSlCvhYO3rId2aQ" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="b947308b-a184-4601-8475-4bf333abcca3" lastsyncedrevisionid="b947308b-a184-4601-8475-4bf333abcca3" lastboardhashguid="ee84bf69-8a14-6a75-bb42-dbff4f4dba65" lastpushedtime="2022-07-14T07:58:23Z" linktopcb3d="false"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYWQxOTI2" projecturn="a.cGVyc29uYWw6dWUyYWQxOTI2IzIwMjEwOTEzNDQzNTc2ODA2" f3durn="urn:adsk.wipprod:dm.lineage:5Ap64JYkSlCvhYO3rId2aQ" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="b947308b-a184-4601-8475-4bf333abcca3" lastsyncedrevisionid="b947308b-a184-4601-8475-4bf333abcca3" lastboardhashguid="ee84bf69-8a14-6a75-bb42-dbff4f4dba65" lastpushedtime="2022-07-14T07:58:23Z" linktopcb3d="true"/>
 <plain>
 <text x="14" y="19.2" size="1.016" layer="21" font="vector" ratio="13" align="center">Pressure Sensor</text>
 <wire x1="4" y1="0" x2="24" y2="0" width="0.05" layer="20"/>
